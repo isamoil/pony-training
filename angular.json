@@ -30,7 +30,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -86,6 +89,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "codeCoverageExclude": [
+              "**/models/*.ts",
+              "**/app.module.ts",
+              "**/app.routes.ts"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -124,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "ponyracer"
+  "defaultProject": "ponyracer",
+  "cli": {
+    "analytics": "c430d744-c140-4190-9167-90dad8679460"
+  }
 }
